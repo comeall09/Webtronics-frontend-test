@@ -1,0 +1,21 @@
+:root {
+  --blue-dark: #0C102D;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  font-family: 'Clash Display', sans-serif;
+}
+
+
+body {
+  background-color: var(--blue-dark);
+}
+
+.layout {
+  padding: 35px 350px;
+}
