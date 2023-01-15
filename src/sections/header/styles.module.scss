@@ -1,0 +1,62 @@
+.header {
+  height: 90vh;
+}
+
+.bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+
+  object-fit: cover;
+  z-index: -1;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 125px 0 190px;
+
+  .top {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+  }
+
+  & > div {
+    display: flex;
+    position: relative;
+
+    .title {
+      font-size: var(--font-2xl);
+      font-weight: 600;
+
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .subtitle {
+      max-width: 360px;
+      margin-left: 57px;
+      margin-bottom: 40px;
+    }
+
+    & > button {
+      margin-right: 24px;
+    }
+
+    & > span {
+      position: absolute;
+      right: -5%;
+      bottom: -30%;
+
+      font-size: var(--font-xl);
+      font-weight: 600;
+    }
+  }
+}
