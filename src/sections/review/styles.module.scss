@@ -1,0 +1,96 @@
+.wrapper {
+  margin-top: 180px;
+  display: flex;
+  flex-direction: column;
+
+  .content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+    /* text side */
+    .textSide {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      span {
+        font-size: var(--font-medium);
+        font-weight: 500;
+      }
+      p {
+        margin-top: 18px;
+        line-height: 1.4;
+      }
+    }
+
+    /* slides */
+    .slidesWrap {
+      width: 68%;
+
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        p {
+          display: flex;
+          height: fit-content;
+          line-height: .9;
+          align-items: flex-start;
+          font-size: var(--font-medium);
+          font-weight: 500;
+
+          span {
+            font-size: small;
+            font-weight: 400;
+            margin-left: 7px;
+          }
+        }
+
+        .buttonsWrap {
+          margin-bottom: 16px;
+          display: flex;
+          justify-content: flex-end;
+
+          button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            padding: 0;
+
+            background-color: var(--block-bg);
+            border: 1px solid var(--block-bg);
+
+            &:first-child {
+              margin-right: 24px;
+            }
+          }
+        }
+
+      }
+      .slides {
+        display: flex;
+        justify-content: space-between;
+
+        .slideBg {
+          padding: 2px 1px 0 2px;
+          overflow: hidden;
+          background: var(--block-gradient);
+          border-radius: 16px;
+          clip-path: polygon(0 0, 100% 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%);
+
+          img {
+            object-fit: cover;
+            max-width: 100%;
+
+            clip-path: polygon(0 0, 100% 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%);
+          }
+        }
+      }
+    }
+  }
+}
