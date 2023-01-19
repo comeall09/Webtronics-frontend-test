@@ -1,0 +1,21 @@
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 180px;
+  .titleWrapper {
+    max-width: 543px;
+    text-align: center;
+    margin: 0 auto;
+
+    .description {
+      max-width: 432px;
+      margin: 16px auto 0;
+    }
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 54px;
+  }
+}
