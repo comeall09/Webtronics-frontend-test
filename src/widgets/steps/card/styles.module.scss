@@ -1,0 +1,54 @@
+.wrapper {
+  width: 504px;
+  padding: 6px;
+  border-radius: 18px;
+
+  .innerBg {
+    background: var(--blue-dark);
+    border-radius: 20px;
+    padding: 10px;
+
+    .border {
+      width: 100%;
+      height: 100%;
+      padding: 1px;
+      border-radius: 8px;
+
+      background: var(--block-gradient);
+    }
+
+    .content {
+      width: 100%;
+      height: 100%;
+      background: var(--blue-dark);
+      border-radius: 8px;
+      padding: 24px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      .number {
+        font-size: var(--font-medium);
+        font-weight: 500;
+      }
+
+      .title {
+        font-weight: 600;
+        font-size: var(--font-large);
+      }
+
+      .description {
+        color: var(--blue-neon);
+      }
+    }
+  }
+}
+
+.rightCard {
+  background: linear-gradient(90deg, rgba(21, 191, 253, 0) 70.03%, rgba(21, 191, 253, 0.7) 90.15%, rgba(156, 55, 253, 0.7) 97.95%);
+}
+
+.leftCard {
+  background: linear-gradient(90deg, rgba(156, 55, 253, 0.7) 0%, rgba(21, 191, 253, 0.7) 10.15%, rgba(21, 191, 253, 0) 30%);
+}

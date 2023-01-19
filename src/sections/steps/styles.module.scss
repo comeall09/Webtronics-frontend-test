@@ -1,0 +1,21 @@
+.wrapper {
+  margin-top: 180px;
+  display: flex;
+  flex-direction: column;
+
+  .content {
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      gap: 145px;
+    }
+
+    .rightCards {
+      margin-top: 25%;
+    }
+  }
+}

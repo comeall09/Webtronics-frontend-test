@@ -1,0 +1,49 @@
+.wrapper {
+  position: absolute;
+  left: 50%;
+
+  .vertical {
+    background: linear-gradient(180deg, #1FF2FF 0%, #27F9E5 52.66%, #2FFFCD 100%);
+    width: 4px;
+    height: 877px;
+    position: absolute;
+    top: 100px;
+    left: 1px;
+  }
+
+  .images {
+    & > img {
+      position: absolute;
+
+      /* first 3 childs only */
+      &:nth-child(-n+3) {
+        right: -14px;
+      }
+
+      /* last 3 childs only */
+      &:nth-last-child(-n+3) {
+        left: -8px;
+        transform: rotate(180deg);
+      }
+
+      &:nth-child(1) {
+        top: 95px;
+      }
+      &:nth-child(2) {
+        top: 470px;
+      }
+      &:nth-child(3) {
+        top: 845px;
+      }
+      &:nth-child(4) {
+        top: 230px;
+      }
+      &:nth-child(5) {
+        top: 600px;
+      }
+      &:nth-child(6) {
+        top: 970px;
+      }
+    }
+  }
+}
