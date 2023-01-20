@@ -1,0 +1,49 @@
+.title {
+  text-align: center;
+  margin: 180px 0 50px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 62% 35%;
+  gap: 30px;
+  font-family: Inter;
+
+  .leftSide {
+    grid-row: span 2 / span 2;
+
+    p {
+      margin: 45px 0 105px;
+    }
+
+    img {
+      object-fit: cover;
+      border-radius: 16px;
+    }
+
+
+  }
+
+  .photos {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 1fr 1fr;
+    gap: 24px;
+
+    & > img {
+      border-radius: 16px;
+    }
+
+    & > img:first-child {
+      grid-row: span 2 / span 2;
+    }
+  }
+
+  .footer {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 50px;
+  }
+}
