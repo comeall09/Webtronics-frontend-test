@@ -20,7 +20,7 @@
     .content {
       width: 100%;
       height: 100%;
-      background: var(--blue-dark);
+      background: var(--block-bg);
       border-radius: 8px;
       padding: 24px;
 
@@ -46,9 +46,9 @@
 }
 
 .rightCard {
-  background: linear-gradient(90deg, rgba(21, 191, 253, 0) 70.03%, rgba(21, 191, 253, 0.7) 90.15%, rgba(156, 55, 253, 0.7) 97.95%);
+  background: linear-gradient(90deg, rgba(156, 55, 253, 0.7) 0%, rgba(21, 191, 253, 0.7) 10.15%, rgba(21, 191, 253, 0) 30%);
 }
 
 .leftCard {
-  background: linear-gradient(90deg, rgba(156, 55, 253, 0.7) 0%, rgba(21, 191, 253, 0.7) 10.15%, rgba(21, 191, 253, 0) 30%);
+  background: linear-gradient(90deg, rgba(21, 191, 253, 0) 70.03%, rgba(21, 191, 253, 0.7) 90.15%, rgba(156, 55, 253, 0.7) 97.95%);
 }
