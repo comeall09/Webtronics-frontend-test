@@ -1,5 +1,4 @@
 import Head from "next/head"
-import Image from "next/image"
 import { About } from "src/sections/about"
 import { Contact } from "src/sections/contact"
 import { Gallery } from "src/sections/gallery"
