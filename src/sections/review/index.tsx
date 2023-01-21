@@ -74,7 +74,7 @@ export function Review() {
 
           <div className={styles.slides}>
             {reviewers.map(({ id, title, photo }, index) => (
-              <div key={title} className={styles.slideBg}>
+              <div key={id} className={styles.slideBg}>
                 {index === 0 ? (
                   // first slide bigger then others
                   <Image priority width={400} height={425} src={photo} alt={title} />

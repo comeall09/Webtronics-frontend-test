@@ -6,6 +6,13 @@ const apiConfig = {
 
 const FEEDBACKS_PATH = "feedback"
 
+type FeedbackType = {
+  id: number
+  email: string
+  name: string
+  phone: string
+}
+
 export const feedbackApi = createApi({
   reducerPath: "feedbackApi",
   tagTypes: ["Feedback"],
@@ -21,7 +28,7 @@ export const feedbackApi = createApi({
       providesTags: (data) => {
         if (data) {
           return [
-            ...data.map(({ id }: any) => ({ type: "Feedback", id })),
+            ...data.map(({ id }: FeedbackType) => ({ type: "Feedback", id })),
             { type: "Feedback", id: "LIST" },
           ]
         }
