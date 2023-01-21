@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
 :root {
   --blue-dark: #0C102D;
   --blue-btn: #0A1482;
@@ -9,6 +11,11 @@
   --font-medium: 24px;
   --font-base: 16px;
   --font-small: 14px;
+
+  --font-primary: 'Clash Display', sans-serif;
+  --font-secondary: 'Inter', sans-serif;
+  --font-tertiary: 'Roboto', sans-serif;
+
 
   --btn-gradient: linear-gradient(180deg, #1FF2FF 0%, #27F9E5 52.66%, #2FFFCD 100%);
   --block-gradient: linear-gradient(152.14deg, rgba(21, 191, 253, 0.7) 9.96%, rgba(156, 55, 253, 0.7) 100%);
@@ -24,7 +31,7 @@
   margin: 0;
   list-style: none;
 
-  font-family: 'Clash Display', sans-serif;
+  font-family: var(--font-primary);
   font-size: var(--font-base);
   font-weight: 400;
   color: white;
@@ -35,12 +42,15 @@
 }
 
 button {
-  padding: 24px 32px;
-  cursor: pointer;
-  border-radius: 8px;
-
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-size: 20px;
+  color: var(--blue-btn);
+
+  padding: 24px 32px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 
   white-space: nowrap;
   overflow: hidden;
@@ -86,12 +96,24 @@ body {
   font-weight: 600;
   line-height: 1.2;
 
-  margin: 0 auto;
+  margin: 180px auto 0;
 }
 
 .layout {
-  padding: 0 350px;
+  padding: 0 15px;
   overflow-x: hidden;
-  max-width: 1980px;
+  max-width: 1250px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+  .sectionTitle {
+    margin-top: 130px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sectionTitle {
+    font-size: 50px;
+  }
 }
