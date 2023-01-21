@@ -1,9 +1,6 @@
 .wrapper {
-  margin-top: 180px;
-
-  & > h2 {
+  h2 {
     max-width: 660px;
-    margin: 0 auto;
     text-align: center;
   }
 
@@ -11,20 +8,41 @@
     margin-top: 55px;
     display: flex;
 
-    .logo {
+    .imgSide {
       width: 50%;
       height: 100%;
       margin-right: 24px;
 
-      & > p {
+      p {
+        font-family: var(--font-secondary);
+        line-height: 1.4;
         max-width: 280px;
       }
 
       position: relative;
-      & > img {
+
+      .imgWrap {
         position: absolute;
-        left: -30%;
-        top: -270px;
+        top: -400px;
+        left: -200px;
+        z-index: -1;
+
+        @media screen and (max-width: 1100px) {
+          width: 900px;
+          height: 800px;
+        }
+        @media screen and (max-width: 700px) {
+          left: -110px;
+        }
+        @media screen and (max-width: 600px) {
+          left: -140px;
+        }
+        @media screen and (max-width: 500px) {
+          left: -200px;
+        }
+        @media screen and (max-width: 400px) {
+          left: -260px;
+        }
       }
     }
     .content {
@@ -37,18 +55,18 @@
       .gradientWrap {
         background: var(--block-gradient);
         padding: 1px;
-        padding-right: 3px;
+        padding-right: 2px;
         border-radius: 8px;
         clip-path: var(--leftTopRightBottom-clip);
 
         .questionBg {
           width: 100%;
           min-height: 60px;
+          border-radius: 8px;
 
           padding: 16px 25px;
-          margin: 1px;
 
-          background-color: var(--blue-dark);
+          background-color: var(--block-bg);
           clip-path: var(--leftTopRightBottom-clip);
         }
       }
@@ -89,11 +107,55 @@
           }
         }
 
-        & > p {
+        p {
+          font-family: var(--font-secondary);
+          line-height: 1.4;
           margin-top: 16px;
         }
       }
     }
   }
+}
 
+@media screen and (max-width: 880px) {
+  .wrapper {
+    .contentWrapper {
+      flex-direction: column;
+
+      .imgSide {
+        width: 100%;
+        p {
+          margin-left: 60%;
+          margin-top: 25%;
+        }
+      }
+
+      .content {
+        margin-top: 400px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        div {
+          height: fit-content;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .wrapper {
+    .contentWrapper {
+      .imgSide {
+        p {
+          margin: 0 auto;
+        }
+      }
+
+      .content {
+        margin-top: 550px;
+        grid-template-columns: 1fr;
+      }
+    }
+  }
 }

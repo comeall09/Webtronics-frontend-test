@@ -32,8 +32,10 @@
 
     .title {
       margin-bottom: 24px;
-      margin-top: 55px;
-      & > p {
+      margin-top: -120px;
+      text-align: center;
+      p {
+        font-family: var(--font-secondary);
         margin-top: 16px;
       }
     }
@@ -55,8 +57,10 @@
         border-radius: 8px;
 
         input {
-          border-radius: 8px;
+          font-family: var(--font-secondary);
+
           width: 100%;
+          border-radius: 8px;
           padding: 24px;
 
           outline: none;
@@ -71,7 +75,7 @@
         }
       }
       .loader {
-        margin: 15px 0;
+        margin: 10px 0;
         text-align: center;
       }
 
@@ -90,8 +94,17 @@
         &:hover {
           color: var(--blue-dark);
         }
+
+        @media screen and (max-width: 500px){
+          padding: 20px 30px;
+        }
       }
     }
   }
+}
 
+@media screen and (max-width: 700px) {
+  .wrapperBg {
+    margin-top: 100px;
+  }
 }

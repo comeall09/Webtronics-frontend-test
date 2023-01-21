@@ -1,5 +1,6 @@
 .wrapper {
-  width: 504px;
+  max-width: 504px;
+  width: 100%;
   padding: 6px;
   border-radius: 18px;
 
@@ -34,11 +35,16 @@
       }
 
       .title {
-        font-weight: 600;
         font-size: var(--font-large);
+        font-weight: 600;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       .description {
+        font-family: var(--font-secondary);
+        line-height: 1.4;
         color: var(--blue-neon);
       }
     }
@@ -51,4 +57,28 @@
 
 .leftCard {
   background: linear-gradient(90deg, rgba(21, 191, 253, 0) 70.03%, rgba(21, 191, 253, 0.7) 90.15%, rgba(156, 55, 253, 0.7) 97.95%);
+}
+
+@media screen and (max-width: 1065px) {
+  .wrapper {
+    background: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .wrapper {
+    .innerBg {
+      .content {
+        gap: 15px;
+        padding: 20px;
+        .title {
+          font-size: var(--font-medium);
+        }
+        .description {
+          font-size: var(--font-small);
+          line-height: 1.2;
+        }
+      }
+    }
+  }
 }

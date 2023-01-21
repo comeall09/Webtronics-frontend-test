@@ -1,14 +1,13 @@
 .wrapper {
-  margin-top: 180px;
   display: flex;
   flex-direction: column;
 
   .content {
     margin-top: 56px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 2fr 1fr 2fr;
 
-    & > div {
+    div {
       display: flex;
       flex-direction: column;
       gap: 145px;
@@ -16,6 +15,39 @@
 
     .rightCards {
       margin-top: 25%;
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .wrapper {
+    .content {
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      .separatorWrap {
+        display: none;
+      }
+
+      div {
+        gap: 40px;
+        align-items: center;
+      }
+
+      .rightCards {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1065px) {
+  .wrapper {
+    .content {
+      display: flex;
+      flex-direction: column;
+      div {
+        gap: 0px;
+      }
     }
   }
 }

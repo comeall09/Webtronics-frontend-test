@@ -62,7 +62,7 @@ export function Steps() {
         </div>
 
         {/* separator */}
-        <div>
+        <div className={styles.separatorWrap}>
           <Separator />
         </div>
 

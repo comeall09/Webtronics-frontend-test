@@ -7,11 +7,12 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  z-index: -1;
+  z-index: -2;
 
   .star {
     position: absolute;
     left: 10%;
+    top: 30px;
     animation: animate linear infinite;
     animation-duration: 16s;
     animation-delay: 10s;
@@ -19,37 +20,30 @@
     &:nth-child(2) {
       animation-duration: 15s;
       left: 20%;
-      top: 5%;
     }
     &:nth-child(3) {
       animation-duration: 13s;
       left: 30%;
-      top: 0%;
     }
     &:nth-child(4) {
       animation-duration: 17s;
       left: 55%;
-      top: 1%;
     }
     &:nth-child(5) {
       animation-duration: 18s;
       left: 55%;
-      top: 1%;
     }
     &:nth-child(6) {
       animation-duration: 15s;
       left: 58%;
-      top: 13%;
     }
     &:nth-child(7) {
       animation-duration: 19s;
       left: 68%;
-      top: 5%;
     }
     &:nth-child(8) {
       animation-duration: 13s;
       left: 80%;
-      top: 2%;
     }
     &:nth-child(9) {
       animation-duration: 15s;
@@ -58,16 +52,16 @@
     &:nth-child(6) {
       animation-duration: 10s;
       left: 95%;
-      top: 5%;
     }
   }
 
   .fume {
     position: absolute;
+    top: 30px;
     width: 50px;
     height: 50px;
     border-radius: 100%;
-    background: radial-gradient(#181C37, #0C102D) no-repeat;
+    background-image: radial-gradient(circle,#181C37 80%, #0C102D 0%);
 
     animation: animate linear infinite;
     animation-duration: 22s;

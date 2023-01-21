@@ -1,6 +1,8 @@
 .wrapper {
   display: flex;
   flex-direction: column;
+  position: relative;
+  background: url('/assets/about/bg') cover no-repeat var(--block-bg);
 
   /* section title */
   & > h2 {
@@ -21,7 +23,8 @@
         width: fit-content;
         display: flex;
         flex-direction: column;
-        & > h3 {
+
+        h3 {
           font-weight: 600;
           font-size: var(--font-large);
           text-align: center;
@@ -44,8 +47,12 @@
           }
 
           .title {
+            font-family: var(--font-secondary);
             font-size: var(--font-small);
             font-weight: 400;
+            line-height: 1.4;
+
+            margin-top: 4px;
           }
           &:not(:first-child):not(:last-child) {
             margin-top: -40px;
@@ -56,10 +63,12 @@
 
     }
     .description {
-      margin-top: 105px;
-      max-width: 486px;
-      margin-left: 67px;
+      font-family: var(--font-secondary);
       line-height: 1.4;
+
+      max-width: 486px;
+      margin-top: 105px;
+      margin-left: 67px;
     }
 
     .banner {
@@ -69,6 +78,55 @@
       bottom: 0;
       z-index: -1;
       object-fit: cover;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .wrapper {
+    .content {
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .wrapper {
+    .content {
+      .mentorsWrap {
+        align-items: center;
+
+        .mentorsLineWrap {
+          margin-left: 0;
+          img {
+            display: none;
+          }
+        }
+        .mentorsBlock {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          margin-top: 15px;
+          gap: 15px;
+          padding: 0 15px;
+
+          .mentor {
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
+
+            &:not(:first-child):not(:last-child) {
+            margin-top: 0px;
+            }
+          }
+        }
+      }
+
+      .description {
+        margin-left: 0;
+        margin-top: 70px;
+        text-align: center;
+      }
     }
   }
 }

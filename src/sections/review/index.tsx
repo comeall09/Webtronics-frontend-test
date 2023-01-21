@@ -4,18 +4,21 @@ import styles from "./styles.module.scss"
 
 const initReviewers = [
   {
+    id: 1,
     photo: "/assets/review/slide1.png",
     title: "Best courses ever",
     description:
       'Good course, up to this point, still ongoing. The only downside, why I gave 4,5 stars, because the "teacher" sometimes feel like, he is lost, and takes up quite a time, to correct himself, and check back etc. Good course, up to this point, still ongoing. The only downside, why I gave 4,5 stars, because the "teacher" sometimes feel like, he is lost, and takes up quite a time, to correct himself, and check back etc.',
   },
   {
+    id: 2,
     photo: "/assets/review/slide2.png",
     title: "Amazing teaching",
     description:
       "The explanation is crazy it really doesn't have a structure to go from point A to point B. He starts to explain something then he change his mind and start with another thing an so on. If you try to learn pro active by doing the same thing with him all along you will get confused and start to loose interest.",
   },
   {
+    id: 3,
     photo: "/assets/review/slide3.png",
     title: "Simple and easy",
     description:
@@ -45,7 +48,7 @@ export function Review() {
   }
 
   return (
-    <div id='review' className={styles.wrapper}>
+    <section id='review' className={styles.wrapper}>
       <h2 className='sectionTitle'>Review</h2>
       <div className={styles.content}>
         {/* text */}
@@ -60,13 +63,17 @@ export function Review() {
           <div className={styles.buttons}>
             <p>{currentSlide}/<span>{reviewers.length}</span></p>
             <div className={styles.buttonsWrap}>
-              <button onClick={prevReviewer}>&lt;</button> {/* > */}
-              <button onClick={nextReviewer}>&gt;</button> {/* < */}
+              <div className={styles.buttonBg}>
+                <button onClick={prevReviewer}>&lt;</button> {/* > */}
+              </div>
+              <div className={styles.buttonBg}>
+                <button onClick={nextReviewer}>&gt;</button> {/* < */}
+              </div>
             </div>
           </div>
 
           <div className={styles.slides}>
-            {reviewers.map(({ title, photo }, index) => (
+            {reviewers.map(({ id, title, photo }, index) => (
               <div key={title} className={styles.slideBg}>
                 {index === 0 ? (
                   // first slide bigger then others
@@ -80,6 +87,6 @@ export function Review() {
         </div>
 
       </div>
-    </div>
+    </section>
   )
 }

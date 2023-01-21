@@ -1,5 +1,4 @@
 .wrapper {
-  margin-top: 180px;
   display: flex;
   flex-direction: column;
 
@@ -20,8 +19,9 @@
         font-weight: 500;
       }
       p {
-        margin-top: 18px;
+        font-family: var(--font-secondary);
         line-height: 1.4;
+        margin-top: 18px;
       }
     }
 
@@ -54,40 +54,120 @@
           display: flex;
           justify-content: flex-end;
 
-          button {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+          .buttonBg {
+            padding: 1px;
+            background: var(--block-gradient);
+            border-radius: 8px;
             width: 40px;
             height: 40px;
-            padding: 0;
 
-            background-color: var(--block-bg);
-            border: 1px solid var(--block-bg);
 
             &:first-child {
               margin-right: 24px;
             }
+            button {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+              height: 100%;
+              padding: 0;
+              color: white;
+              border-radius: 8px;
+
+              background-color: var(--block-bg);
+
+              &:hover {
+                color: var(--blue-neon);
+              }
+            }
           }
+
         }
 
       }
       .slides {
         display: flex;
         justify-content: space-between;
+        gap: 15px;
 
         .slideBg {
-          padding: 2px 1px 0 2px;
+          padding: 1px;
           overflow: hidden;
-          background: var(--block-gradient);
           border-radius: 16px;
+
+          background: var(--block-gradient);
           clip-path: polygon(0 0, 100% 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%);
 
           img {
-            object-fit: cover;
             max-width: 100%;
+            object-fit: cover;
+            border-radius: 16px;
 
             clip-path: polygon(0 0, 100% 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    .content {
+      flex-direction: column;
+      width: 100%;
+
+      .textSide {
+        width: 100%;
+        margin-bottom: 35px;
+        height: 150px;
+      }
+
+      .slidesWrap {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    .content {
+      .slidesWrap {
+        .slides {
+          .slideBg {
+            &:not(:first-child) {
+              max-width: 250px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    .content {
+      .textSide {
+        margin-bottom: 65px;
+      }
+    }
+    .content {
+      .slidesWrap {
+        width: 100%;
+        .slides {
+          display: grid;
+          grid-template-columns: auto auto;
+          .slideBg {
+            &:first-child {
+              grid-column: span 2 / span 2;
+            }
+            width: 100%;
+            img {
+              width: 100%;
+            }
           }
         }
       }

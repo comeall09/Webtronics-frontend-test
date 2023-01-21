@@ -9,12 +9,14 @@ export function Header() {
         className={styles.bg}
         fill
         src={"/assets/headerBg.png"}
-        alt='bacground'
+        alt='background'
       />
       <Navbar />
       <div className={styles.wrapper}>
         <div className={styles.top}>
-          <h1 className={styles.title}>Front-End</h1>
+          <h1 className={styles.title}>
+            Front-End <p>Developer courses</p>
+          </h1>
           <p className={styles.subtitle}>
             Make UIs and websites beautiful, functional, and fast. Cover all the
             topics that expensive bootcamps teach (and more).{" "}

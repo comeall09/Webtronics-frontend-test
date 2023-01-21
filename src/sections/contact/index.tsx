@@ -28,7 +28,6 @@ export function Contact() {
     register,
     handleSubmit,
     formState: { errors },
-    formState,
     reset
   } = useForm({
     mode: "onBlur",

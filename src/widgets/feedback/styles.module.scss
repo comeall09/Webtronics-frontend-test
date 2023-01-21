@@ -8,7 +8,7 @@
   padding: 0 15px;
 
   .content {
-    max-height: 75%;
+    max-height: 85%;
     overflow-y: auto;
   }
 
@@ -33,6 +33,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       margin-bottom: 10px;
+      gap: 15px;
     }
 
     p {
@@ -49,7 +50,31 @@
     height: fit-content;
     color: var(--blue-btn);
     background: var(--btn-gradient);
-    border: none;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    .titles {
+      display: none;
+    }
+
+    .feedbacks {
+      div {
+        border: 1px solid var(--blue-btn);
+        padding: 15px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+
+        :nth-child(2) {
+          font-size: var(--font-small);
+        }
+        :nth-child(3) {
+          font-size: var(--font-small);
+        }
+      }
+    }
   }
 }
