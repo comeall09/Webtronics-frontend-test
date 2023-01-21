@@ -1,55 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Test Task for Webtronics React Developer
 
-## Getting Started Server
+## 🎥 Демо можно посмотреть по ссылке: [https://webtronics-test.app](webtronics-frontend-test-gyn0364s2-comeall09.vercel.app)
 
-First, run the server:
+## 💻 Технологии для исполнения тестового задания:
 
-```
+### • Reactjs – для создания интерфейса
 
-yarn server
+### • Typescript – для типизации
 
-```
+### • Module.css / scss / sass – для стилизации
 
-The server for interacting with the API will be running on http:localhost:3004
+### • React HookForm – для сбора данных
 
-To get contacts, use a GET request to http:localhost:3004/feedback
+### • Yup – для валидации
 
-To create contact, use a POST request to http:localhost:3004/feedback
-```
-  {
-    "name": string,
-    "email": stirng,
-    "phone": stirng
-  }
-```
+### • Nextjs – для SSR
 
-## Getting Started Fontend
+### • Стейт менеджер для приложения используйте Redux
 
-First, run the development server:
+## ✍️ Задание:
 
-```
+### • Сверстать интерактивный одностраничник для обратной связи ✅
 
-yarn dev
+### • Интегрировать API ✅
 
-```
+### • Верстка должна быть семантическая, используя компонентный подход ✅
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### • Нельзя использовать UI библиотеки с готовыми компонентами ✅
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### • Форма обратной связи должна отправлять запрос на http://localhost:3004/feedback [method: POST]. Форма обратной связи должна отправлять запрос на http://localhost:3004/feedback [method: POST] ✅
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### • Типизируйте свои компоненты и старайтесь не использовать тип ANY. (Ни разу не использован тип any во всем проекте) ✅
 
-## Learn More
+### • Можете верстать только десктопную часть сайта ✅
 
-To learn more about Next.js, take a look at the following resources:
+## 💡 Дополнения:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### • Адаптив сайта также сверстан ✅
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### • Сверстано модальное окно со списком отправленных фидбеков на db.json ✅
 
-## Deploy on Vercel
+### • Добавлена анимация падающих звездочек ✅
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<p  align='center'>
+
+<img  width='48%'  src='https://i.ibb.co/b1Bts8H/main.webp'  alt='main'/>
+
+<img  width='48%'  src='https://i.ibb.co/z6k6nkX/reviewers.webp'  alt='reviewers'/>
+
+<img  width='48%'  src='https://i.ibb.co/n7JqsBN/gallery.webp'  alt='gallery'/>
+
+<img  width='48%'  src='https://i.ibb.co/qMW5ysS/feedbacks.webp'  alt='feedbacks'/>
+
+</p>
+
+<p  align='center'>
+
+<img  width='20.3%'  src='https://i.ibb.co/qnQx8pv/main-Mobile.webp'  alt='main'/>
+
+<img  width='20.3%'  src='https://i.ibb.co/7j4RDmy/reviewers-Mobile.webp'  alt='reviewers'/>
+
+<img  width='20%'  src='https://i.ibb.co/Lgygt3b/gallery-Mobile.webp'  alt='gallery'/>
+
+<img  width='20%'  src='https://i.ibb.co/TT8Py1X/contact-Mobile.webp'  alt='contact'/>
+
+</p>
