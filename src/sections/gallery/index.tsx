@@ -4,17 +4,17 @@ import styles from "./styles.module.scss"
 const photosList = [
   {
     id: 1,
-    src: "/assets/gallery/1.png",
+    src: "/assets/gallery/1.webp",
     alt: "gallery",
   },
   {
     id: 2,
-    src: "/assets/gallery/2.png",
+    src: "/assets/gallery/2.webp",
     alt: "gallery",
   },
   {
     id: 3,
-    src: "/assets/gallery/3.png",
+    src: "/assets/gallery/3.webp",
     alt: "gallery",
   },
 ]
@@ -37,7 +37,7 @@ export function Gallery() {
             className={styles.leftPic}
             width={290}
             height={435}
-            src={"/assets/gallery/left.png"}
+            src={"/assets/gallery/left.webp"}
             alt={"gallery"}
           />
         </div>

@@ -23,7 +23,7 @@ export function Questions() {
             <Image
               width={1000}
               height={1400}
-              src='/assets/questions/question.png'
+              src='/assets/questions/question.webp'
               alt='question'
             />
           </div>
