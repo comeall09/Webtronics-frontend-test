@@ -16,7 +16,7 @@
 
 ### • Nextjs – для SSR
 
-### • Стейт менеджер для приложения используйте Redux
+### • Стейт менеджер для приложения - Redux
 
 ## ✍️ Задание:
 
@@ -28,7 +28,7 @@
 
 ### • Нельзя использовать UI библиотеки с готовыми компонентами ✅
 
-### • Форма обратной связи должна отправлять запрос на http://localhost:3004/feedback [method: POST]. Форма обратной связи должна отправлять запрос на http://localhost:3004/feedback [method: POST] ✅
+### • Форма обратной связи должна отправлять запрос на http://localhost:3004/feedback [method: POST] ✅
 
 ### • Типизируйте свои компоненты и старайтесь не использовать тип ANY. (Ни разу не использован тип any во всем проекте) ✅
 
@@ -57,9 +57,9 @@
 
 <p  align='center'>
 
-<img  width='20.3%'  src='https://i.ibb.co/qnQx8pv/main-Mobile.webp'  alt='main'/>
+<img  width='20%'  src='https://i.ibb.co/qnQx8pv/main-Mobile.webp'  alt='main'/>
 
-<img  width='20.3%'  src='https://i.ibb.co/7j4RDmy/reviewers-Mobile.webp'  alt='reviewers'/>
+<img  width='20%'  src='https://i.ibb.co/7j4RDmy/reviewers-Mobile.webp'  alt='reviewers'/>
 
 <img  width='20%'  src='https://i.ibb.co/Lgygt3b/gallery-Mobile.webp'  alt='gallery'/>
 
