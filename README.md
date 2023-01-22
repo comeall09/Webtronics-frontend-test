@@ -1,6 +1,6 @@
 # Test Task for Webtronics React Developer
 
-## 🎥 Демо можно посмотреть по ссылке: [https://webtronics-test.app](webtronics-frontend-test-gyn0364s2-comeall09.vercel.app)
+## 🎥 Демо можно посмотреть по ссылке: [https://webtronics-test.app](https://webtronics-frontend-test-murex.vercel.app/)
 
 ## 💻 Технологии для исполнения тестового задания:
 
