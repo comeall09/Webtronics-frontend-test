@@ -1,4 +1,3 @@
-import Image from "next/image"
 import styles from "./styles.module.scss"
 
 const question = {
@@ -19,14 +18,7 @@ export function Questions() {
       <div className={styles.contentWrapper}>
         <div className={styles.imgSide}>
           <p>Do you have any kind of questions? We are here to help.</p>
-          <div className={styles.imgWrap}>
-            <Image
-              width={1000}
-              height={1400}
-              src='/assets/questions/question.webp'
-              alt='question'
-            />
-          </div>
+          <div className={styles.img}></div>
         </div>
 
         {/* questions list */}

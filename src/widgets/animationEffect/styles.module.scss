@@ -14,8 +14,8 @@
     left: 10%;
     top: 30px;
     animation: animate linear infinite;
-    animation-duration: 16s;
-    animation-delay: 10s;
+    animation-duration: 25s;
+    animation-delay: 15s;
 
     &:nth-child(2) {
       animation-duration: 15s;
@@ -49,13 +49,43 @@
       animation-duration: 15s;
       left: 100%;
     }
-    &:nth-child(6) {
+    &:nth-child(10) {
       animation-duration: 10s;
       left: 95%;
     }
   }
 
   .fume {
+    position: absolute;
+    left: 10%;
+    width: 500px;
+    height: 500px;
+    top: 40%;
+    border-radius: 50%;
+
+    &:nth-child(2) {
+      width: 500px;
+      height: 500px;
+      left: 60%;
+      top: 10%;
+    }
+    &:nth-child(3) {
+      width: 500px;
+      height: 500px;
+      left: 50%;
+      top: 60%;
+    }
+    &:nth-child(4) {
+      width: 700px;
+      height: 700px;
+      left: 20%;
+      top: -20%;
+    }
+  }
+
+
+
+  /* .fume {
     position: absolute;
     top: 30px;
     width: 50px;
@@ -109,7 +139,7 @@
       height: 300px;
       left: 95%;
     }
-  }
+  } */
 }
 
 

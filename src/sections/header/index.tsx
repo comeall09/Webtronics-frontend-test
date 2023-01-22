@@ -1,16 +1,10 @@
-import Image from "next/image"
+import Link from "next/link"
 import { Navbar } from "src/widgets/navbar"
 import styles from "./styles.module.scss"
 
 export function Header() {
   return (
     <header className={styles.header}>
-      <Image
-        className={styles.bg}
-        fill
-        src={"/assets/headerBg.png"}
-        alt='background'
-      />
       <Navbar />
       <div className={styles.wrapper}>
         <div className={styles.top}>
@@ -24,7 +18,7 @@ export function Header() {
         </div>
 
         <div className={styles.bottom}>
-          <button>Start my career change</button>
+          <Link href={"#contact"}>Start my career change</Link>
           <h1 className={styles.title}>Developer</h1>
           <span>Courses</span>
         </div>

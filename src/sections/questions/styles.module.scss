@@ -21,27 +21,43 @@
 
       position: relative;
 
-      .imgWrap {
-        position: absolute;
-        top: -400px;
-        left: -200px;
-        z-index: -1;
+      .img {
+        position: relative;
 
-        @media screen and (max-width: 1100px) {
-          width: 900px;
-          height: 800px;
-        }
-        @media screen and (max-width: 700px) {
-          left: -110px;
-        }
-        @media screen and (max-width: 600px) {
-          left: -140px;
-        }
-        @media screen and (max-width: 500px) {
-          left: -200px;
-        }
-        @media screen and (max-width: 400px) {
-          left: -260px;
+        width: 400px;
+        height: 400px;
+        &::after {
+          content: '';
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          left: -40px;
+          top: -100px;
+          background-image: url('/assets/questions/question.webp');
+          background-repeat: no-repeat;
+          background-size: 500px 500px;
+          transform: scale(2.6);
+          z-index: -1;
+
+          @media screen and (max-width: 1100px) {
+            left: -100px;
+          }
+          @media screen and (max-width: 880px) {
+            top: -350px;
+            left: -70px;
+            transform: scale(2);
+          }
+          @media screen and (max-width: 700px) {
+            top: -100px;
+            left: 00px;
+          }
+          @media screen and (max-width: 500px) {
+            left: -70px;
+          }
+          @media screen and (max-width: 430px) {
+            left: -100px;
+          }
         }
       }
     }
@@ -131,7 +147,7 @@
       }
 
       .content {
-        margin-top: 400px;
+        margin-top: -200px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 100%;
@@ -149,11 +165,12 @@
       .imgSide {
         p {
           margin: 0 auto;
+          text-align: center;
         }
       }
 
       .content {
-        margin-top: 550px;
+        margin-top: 50px;
         grid-template-columns: 1fr;
       }
     }

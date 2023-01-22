@@ -3,8 +3,8 @@ import styles from "./styles.module.scss"
 
 const star = "/assets/star.svg"
 const stars = new Array(10).fill(star)
-const fume = 0
-const fumes = new Array(10).fill(fume)
+const fume = "/assets/fume.png"
+const fumes = new Array(4).fill(fume)
 
 export function AnimationEffect() {
   return (
@@ -21,7 +21,14 @@ export function AnimationEffect() {
       ))}
       <div>
         {fumes.map((fume, index) => (
-          <p className={styles.fume} key={index}></p>
+          <Image
+            className={styles.fume}
+            key={index}
+            src={fume}
+            width={500}
+            height={500}
+            alt={"fume"}
+          />
         ))}
       </div>
     </div>
